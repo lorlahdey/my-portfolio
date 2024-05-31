@@ -19,14 +19,12 @@ export const metadata: Metadata = {
 
 interface RootLayoutProps {
   children: React.ReactNode;
-  pageTitle: string;
 }
-export default function RootLayout({ children, pageTitle }: RootLayoutProps) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={`${poppins.className} bg-[#222222] min-h-screen `}>
         <Header />
-        
         {children}
         <Footer />
       </body>
